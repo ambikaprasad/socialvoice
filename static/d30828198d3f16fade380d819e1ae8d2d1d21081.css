@@ -2587,7 +2587,14 @@ table td[class*=col-], table th[class*=col-] {
         -ms-overflow-style: -ms-autohiding-scrollbar;
         border: 1px solid #ddd
     }
+    .home .overlay .title h1 {
+        font-size: 50px !important;
 
+    }
+    .home .overlay .title span {
+        line-height: 1.2 !important;
+
+    }
     .table-responsive > .table {
         margin-bottom: 0
     }
