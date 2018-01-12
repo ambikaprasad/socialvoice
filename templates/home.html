@@ -417,7 +417,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="item">
                         <h1 class="counter">5 +</h1>
-                        <p>Management Executive</p>
+                        <p>Media Mgmt. Guru</p>
                     </div>
                 </div>
             </div>
@@ -804,30 +804,31 @@
                 Get In Touch
             </h1>
             <p class="para"></p>
-            <!-- <div class="row box">
-                <div class="col-sm-4">
-                    <div class="item">
-                        <i class="fa fa-map-marker"></i>
-                        <p>123, doky st, Giza, Egypt</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
+             <div class="row box">
+                 <!--   <div class="col-sm-4">
+                        <div class="item">
+                            <i class="fa fa-map-marker"></i>
+                            <p>123, doky st, Giza, Egypt</p>
+                        </div>
+                    </div> -->
+                <div class="col-sm-6">
                     <div class="item">
                         <i class="fa fa-envelope-o"></i>
-                        <p>Oneback@yourmail.com</p>
+                        <p>specialist@socialvoice.online</p>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="item">
                         <i class="fa fa-phone"></i>
-                        <p>+01 234567890</p>
+                        <p>+91 8826358946</p>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-8 col-sm-12">
                     <div class="contact-form">
-                        <form id="contact-form" method="post"><input type="hidden" name="form-name" value="contact-form">
+                        <form id="contact-form" method="post" action="/lead-request/"><input type="hidden" name="form-name" value="contact-form">
+                            {% csrf_token %}
                              <div class="row">
                                  <div class="form-group col-md-12">
                                      <input type="text" name="name" class="form-control" placeholder="Name" required="required">
@@ -836,10 +837,10 @@
                                      <input type="email" name="email" class="form-control" placeholder="Email" required="required">
                                  </div>
                                  <div class="form-group col-sm-6">
-                                     <input type="Number" name="subject" class="form-control" placeholder="Mobile No" required="required">
+                                     <input type="Number" name="mobile" class="form-control" placeholder="Mobile No" required="required">
                                  </div>
                                  <div class="form-group col-md-12">
-                                     <textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+                                     <textarea rows="6" name="message" class="form-control" placeholder="Your Requirement" required="required"></textarea>
                                  </div>
                                  <div class="col-md-12">
                                      <div>
@@ -856,10 +857,11 @@
     <!-- end section contact -->
     
     <div class="social-icon-div">
-        <a href="#"><i class="fa fa-facebook"></i></a>
+       <!-- <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
         <a href="#"><i class="fa fa-google-plus"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a> -->
+        <a href="#">&nbsp;</a>
         <p>Copyright © 2018 SocialVoice, All Rights Reserved.</p>
     </div>
     
