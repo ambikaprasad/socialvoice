@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, HttpResponseRedirect, HttpResponse
 from .models import Lead
 
 
@@ -14,3 +14,7 @@ def lead_request(request):
 
     l = Lead.objects.create(name=name, email=email, mobile=mobile, message=message)
     return HttpResponseRedirect("/")
+
+
+def zoho(request):
+    return HttpResponse("1515747476038")
